@@ -10,13 +10,11 @@ public class Base {
 	//메소드일반
     public void service(String state) {
         if(state=="낮") {
-        	System.out.println("낮에는 열심히 수업듣자");
+        	day();
         }else if(state=="밤") {
-        	System.out.println("밤에는 숙면");
+        	night();
         }else if(state=="오후") {
-        	System.out.println("오후도 낮과 마찬가지로 공부해야 합니다.");
-        }else {
-        	this.service(state);
+        	afternoon();
         }
         //코드작성할것
     }
